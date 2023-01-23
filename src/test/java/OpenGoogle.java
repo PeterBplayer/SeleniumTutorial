@@ -1,6 +1,7 @@
 // Stworzenie metody getDriver w której zadaje się nazwę przeglądarki
 // W metododzie main wywołanie metody, otwarcie wybraną przeglądarką strony google.com
 
+import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,20 +10,22 @@ import org.testng.annotations.Test;
 
 public class OpenGoogle {
 
-    public WebDriver getDriver(String browser) throws IllegalArgumentException {
+    public WebDriver getDriver(String browser) throws InvalidArgumentException {
 //        Metoda z tutoriala:
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+//                Wskazówka: dodanie pełnej ścieżki to zmienny środowiskowych systemowych Path
+//                niweluje potrzebę użycia System.setProperty
+//                System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 return new ChromeDriver();
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
+//                System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
                 return new FirefoxDriver();
             case "edge":
-                System.setProperty("webdriver.edge.driver", "src/main/resources/msedgedriver.exe");
+//                System.setProperty("webdriver.edge.driver", "src/main/resources/msedgedriver.exe");
                 return new EdgeDriver();
             default:
-                throw new IllegalArgumentException("Invalid browser name.");
+                throw new InvalidArgumentException("Invalid browser name.");
         }
 //        Moja metoda:
         /*if (browser.equals("chrome")) {
