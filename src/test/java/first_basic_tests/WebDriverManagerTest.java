@@ -1,4 +1,4 @@
-// WebDriverManager pozwala na pominięcie ręcznego ściągnięcia WebDriverów,
+package first_basic_tests;// WebDriverManager pozwala na pominięcie ręcznego ściągnięcia WebDriverów,
 // zostają one wykryte i pobrane automatycznie.
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;

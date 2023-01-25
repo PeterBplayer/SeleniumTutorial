@@ -1,4 +1,4 @@
-// Stworzenie metody getDriver w której zadaje się nazwę przeglądarki
+package first_basic_tests;// Stworzenie metody getDriver w której zadaje się nazwę przeglądarki
 // W metododzie main wywołanie metody, otwarcie wybraną przeglądarką strony google.com
 
 import org.openqa.selenium.Dimension;
