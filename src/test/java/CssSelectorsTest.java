@@ -49,7 +49,7 @@ public class CssSelectorsTest {
         driver.findElement(firstFormAfterLabel);
         driver.findElements(allFormsAfterLabel);
 
-        By attrTag = By.cssSelector("input[name='fname'");
+        By attrTag = By.cssSelector("input[name='fname']");
         By attrContains = By.cssSelector("name*='name'");
         By attrStarts = By.cssSelector("[name^='f']");
         By attrEnds = By.cssSelector("name$='me'");
@@ -66,10 +66,6 @@ public class CssSelectorsTest {
         driver.findElements(lastChild);
         driver.findElement(secondChild);
         driver.findElement(thirdChild);
-
-
-
-
 
     }
 }
