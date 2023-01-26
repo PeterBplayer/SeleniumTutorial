@@ -1,3 +1,5 @@
+package selectors;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +28,7 @@ public class CssSelectorsTest {
         List<WebElement> inputs = driver.findElements(cssTag);
         System.out.println("Number of inputs: " + inputs);
 
-        By cssName = By.cssSelector("[name='fname']");// [class = 'topSecret']
+        By cssName = By.cssSelector("[name='fname']");// [class='topSecret']
         driver.findElement(cssName);
 
         By all = By.cssSelector("*"); // znalezienie wszystkich elementów html na stronie

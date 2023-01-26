@@ -1,3 +1,5 @@
+package selectors;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -77,7 +79,7 @@ public class XpathTest {
         By grandParent = By.xpath("//div/../..");
         By asc = By.xpath("//div/ancestor::*");// "//div/ancestor::body"
         By foll = By.xpath("//img/following::*");
-        By follSibling= By.xpath("//img/following-sibling::*");
+        By follSibling = By.xpath("//img/following-sibling::*");
         By prec = By.xpath("//img/preceding::*");
         By precSibling = By.xpath("//img/preceding-sibling::*");
         driver.findElement(child);
