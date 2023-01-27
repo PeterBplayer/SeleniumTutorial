@@ -1,3 +1,5 @@
+package actions_on_elements;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -28,5 +30,6 @@ public class UploadFileTest {
         File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
         String fileName = "Result" + randomNumber + ".png";
         FileUtils.copyFile(srcFile, new File("src/test/screenshots/" + fileName));
+
     }
 }
