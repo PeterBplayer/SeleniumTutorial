@@ -3,4 +3,4 @@ i nie zmienia się za każdym ponowny załadowaniu strony.
 2. By.name UWAGA: trzeba potwierdzić unikalność wartości atrybutu name w konsoli DevTools
 3. By.linkText & By.partialLinkText UWAGA: tylko dla lokalizowania linków
 4. selektory CSS (w konsoli DevTools $$(""))
-5. selektory Xpath
+5. selektory Xpath (w konsoli DevTools $x(""))
