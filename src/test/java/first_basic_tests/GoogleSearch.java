@@ -15,6 +15,7 @@ public class GoogleSearch {
         WebDriver driver = openGoogle.getDriver("chrome");
         driver.manage().window().maximize();
         driver.get("https://www.google.com");
+
         // znalezienie przycisku
         WebElement agreeButton = driver.findElement(By.xpath("//div[text()='Zaakceptuj wszystko']"));
         // klikniecie przycisku
